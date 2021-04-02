@@ -1,3 +1,6 @@
+// This file controls how the game is VIEWED. Meaning, we aren't changing how the game is played, only how its seen by the user - as in size of the shapes,
+// and placement of the UI. Think of it like a filter.
+
 module View
 
 open GameCore
@@ -22,23 +25,30 @@ let assetsToLoad = [
 
 // Block size
 let bw, bh = 25, 25
+
 // Game space
 let gx, gy, gw, gh = 10, 10, 250, 500
+
 // Next block space
 let nx, ny, nw, nh = 270, 10, 120, 70
+
 // Game over space
-let gameOverSpace = 20, 200, 360, 100
+let gameOverSpace = 20, 200, 230, 100
 
 let textScale = 0.5
 let textHeight = 20
+
 // Score text
 let sx, sy = nx + (nw / 2), ny + nh + 20
+
 // Level text
 let lx, ly = sx, sy + 60
+
 // Instruction text
 let ix, iy = rw / 2, gy + gh + 30
+
 // Game over text
-let gox, goy = 200, 230
+let gox, goy = 140, 230
 
 let eventSoundMap =
     function
